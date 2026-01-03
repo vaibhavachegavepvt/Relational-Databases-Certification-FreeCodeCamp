@@ -285,3 +285,59 @@ Two more fonts to go. Create lato-bold.ttf in the new fonts folder from here.
 Lastly, create lato-light.ttf in your new fonts folder from here.
 
 View your file tree and make sure the files are there.
+
+Things are looking more organized 😄 The new fonts are there. Now you can remove the old fonts folder and everything in it. You can't do that with rmdir since it's not empty. View the "help" menu of the rm command to see if you can find anything.
+
+There's a -r flag that says, remove directories and their contents recursively. That will remove the folder and everything in it. Use the "remove" command with that flag to remove the fonts folder. Make sure it's the one in the website folder. Be careful not to remove the wrong folder.
+
+List what's here to see if it's gone.
+
+Looks like it’s gone. Surely, it went to the trash can right? No, it’s just gone. You should be very careful when recursively removing files like that. It will delete everything, and can destroy your operating system. There's a few more files for the boilerplate. Create package.json in the website folder.
+
+Next, create server.js in the website folder.
+
+Lastly, create README.md in the website folder.
+
+List the content of this folder to make sure your new files are there.
+
+The boilerplate is complete. Use echo to print Yay! to the terminal.
+
+Print I finished the boilerplate! to the terminal.
+
+Print one more thing... to the terminal
+
+You can print to a file instead of the terminal with echo text >> filename. Use it to print I made this boilerplate to your README.md file.
+
+Use more to view your README.md file.
+
+Now that line is in the file. Add from the command line to your README.md file with the echo command and the same method.
+
+Use more to view the "readme" file again.
+
+Now the file has two lines. Add for the freeCodeCamp bash lessons to your "readme" file with the echo command like you did before.
+
+View your "readme" file again like you did before.
+
+Change to the project folder.
+
+You are back where you started. List what's here.
+
+Still the same items. Rename the website folder to website-boilerplate.
+
+List the contents of this folder to see the new name.
+
+Thanks for making this. You need to make a copy of it. Take a look at the "help" menu of the "copy" command.
+
+Scroll up to find that "recursive" flag. You need to use it again to copy the whole folder. Copy the whole boilerplate into a folder named toms-website.
+
+List the contents of the project folder to see the new copy.
+
+Thanks. Use find to view the tree of toms-website.
+
+Use find to view the tree of the boilerplate folder to make sure it matches.
+
+Awesome! You are finished for now. Clear the terminal one last time.
+
+Print "goodbye terminal" to the terminal.
+
+Use the "exit" command to exit the terminal.
