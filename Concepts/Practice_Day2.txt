@@ -107,3 +107,181 @@ Next, add a header image. Create header.png in the website folder.
 
 Finally, create footer.jpeg in the website folder.
 
+Use the list command to check out the images you just added.
+
+Looks like images show up in pink. There's also three fonts to use for the website. The first one is "roboto". Create roboto.font in the website folder.
+
+The next one is "lato". Create lato.font in the website folder.
+
+Lastly, create menlo.font in the website folder.
+
+List the contents of this folder to see your new font files.
+
+Your three font files are there. There's three icons for the website as well. Create CodeAlly.svg in the website folder.
+
+Next, create CodeRoad.svg in the website folder.
+
+Finally, create freeCodeCamp.svg in the website folder.
+
+Check out the new icons you just added by listing the contents of the folder they are in.
+
+The icons are pink as well. I think the images should go in a separate folder to clean it up a little. Make an images directory in the website folder to put them in.
+
+List the contents of the website folder to make sure your new folder is there.
+
+There's your new images folder. It's blue. You can copy a file with cp <file> <destination>. cp stands for "copy". Copy background.jpg to your images folder.
+
+Better make sure it worked. Change to the images directory.
+
+List the contents to see if background.jpg is here.
+
+There it is. Looks like the copy worked. Change back to the website directory so you can copy the other ones.
+
+Remind yourself of the files here by listing the contents.
+
+You copied the background image to the images folder so you don't need the one here anymore. You can remove a file with rm <filename>. Remove background.jpg from the website folder.
+
+List the contents to make sure it's gone.
+
+Okay, it's gone. Next, copy header.png to the images folder.
+
+Last, copy the "footer" image to the images folder.
+
+All the images should be copied over. Change to the images directory so you can make sure.
+
+Check if the images are here by listing the contents.
+
+They all made it here. Go back to the website folder so you can delete the original files.
+
+List the contents to remind yourself of the filenames to delete.
+
+There's two that you don't need anymore. Remove the "header" image file from the website folder since you copied to the images folder.
+
+It should be gone. Remove the "footer" image from the website folder as well.
+
+List the contents of the website folder to check if they are gone.
+
+Looks like they're all deleted. There was a mistake with the extensions for the font files. You can rename them with mv like this: mv <filename> <new_filename>. mv stands for "move", it can rename or move something. Rename roboto.font to roboto.woff.
+
+Use "list" to check if it worked.
+
+Do you see the "roboto" font? The rename worked. Next, rename the "lato" font file to lato.ttf.
+
+Lastly, rename the "menlo" font to menlo.otf.
+
+Use the "list" command to make sure those last two got renamed.
+
+Take a look at the files to make sure they got renamed. Those font files could be organized into a folder as well. Make a fonts directory in the website folder to put them in.
+
+List the contents of the website folder to make sure your new folder is there.
+
+See it? You renamed the font files with mv, you can also move files with it. Move the "roboto" font to the new fonts folder. Here's an example: mv <file> <destination>.
+
+You can use find to find things or view a file tree. Enter find to view the file tree of the website folder to see all the files and folders within it.
+
+You can see everything in this website folder and its descendant folders. Notice that they all start with ./ to represent this folder. You can see that your font moved to the fonts folder. Next, move the "lato" font to the fonts folder.
+
+There's one more font to move. Move the "menlo" font to the fonts folder.
+
+Use find again to list the whole file tree and make sure those two got moved.
+
+Yes, you can see them all in the fonts folder. Let's organize some more. Make a client directory in the website folder for the client side files.
+
+You can make a folder in that client folder from here by adding it to the path like this: mkdir client/<new_folder_name>. Make a src directory in the client folder from here.
+
+You can move files all the way across the system from here with the right path. Move index.html to the client/src folder from here.
+
+Use find to view the file tree and make sure it moved.
+
+Can you see the index.html file in your new src folder? Looks like it moved 😄 There's some more files that can go in the src folder. Move index.js to it from here.
+
+Last is the CSS file. Move styles.css to the src folder.
+
+Seems like you can do anything right from here. Take another look at the tree with find.
+
+Things are looking more organized 😄 You can use find <folder_name> to display the tree of a different folder. View the file tree of the client folder from the website folder.
+
+Now you just see what's in the client folder. What else can find do? View the "help" menu of the find command to look around.
+
+The menu isn't very pretty, but there's a -name flag in there. You can use it to search for something with find -name <filename>. Use find with the -name flag to search for index.html.
+find -name index.html
+
+It shows you where that file is. Using the same command, find where the styles.css file is.
+
+You can search for folders with it, as well. Using the same command and flag, find the src folder.
+
+😄 View the file tree of the website folder to see what else you need to do.
+
+What's next? More organizing! You should put all the assets in one spot. Change into the client folder.
+
+Make a new directory named assets in the client folder.
+
+Change into the new assets folder.
+
+All the images and other assets can go here. Make an images directory in the assets folder for all the images.
+
+Go to your new images folder.
+
+You want the images here. Create background.jpg in this folder.
+
+Wait. You don't need to recreate them. You can just move the other images here. Go back to the website folder from here. It's three folder back.
+
+
+Now go to where the original images are. Change into the images folder.
+
+List the contents of the images folder to see the files here.
+
+Umm, first I think you should move them back to the website folder. Move header.png back to the website folder. The destination for the file is ..
+
+List the contents of the images folder to see if it's gone.
+
+It's gone. Go back to the website folder.
+
+List what's here.
+
+There's the file you just moved. Next, you will move it to the client/assets/images folder. First, use find with the correct flag to search for images.
+
+find -name images
+
+There's your two image folders. Move header.png to the one with the longer path. Just use it as the destination to do so.
+
+Use find to search for your header.png file and make sure it moved.
+
+There it is. Right where you put it. Next, search for your footer.jpeg file so you can move that over there.
+
+It's in the original images folder. You can use that path with the move command to move it. Move footer.jpeg to the client/assets/images folder while in the website folder.
+
+You don't need the old images folder anymore. You can use rmdir <directory_name> to remove a folder. rmdir stands for "remove directory". Try to remove the images folder with rmdir. Make sure it's the one in the website folder.
+
+Directory not empty? Oh yeah, there's still the background image in there. Remove the background image file in the images folder from here. Make sure it's the one in the website/images folder.
+
+Try to remove the images folder again with rmdir. Make sure it's the one in the website folder.
+
+I think it worked this time. List the contents to find out.
+
+It worked, the images folder is gone. Make a new icons folder in your assets folder while in the website folder.
+
+Move the CodeAlly.svg file to your new icons folder.
+
+View the file tree of the website folder and make sure it moved.
+
+Verify that the file moved to the icons folder. Next, move the "CodeRoad" file to your icons folder.
+
+Lastly, move the "freeCodeCamp" file to your icons folder.
+
+View the file tree and make sure the files moved.
+
+This looks much better. The three icons are now in the icons folder. Make a fonts folder in your assets folder from here for all the font files.
+
+
+Turns out you want some different fonts for the website. From here, create roboto-bold.woff in your new fonts folder. You can put the path in front of the filename of where you want it to go.
+
+Next, create roboto-light.woff in your new fonts folder from here.
+
+View the file tree of the client/assets/fonts folder from here to see if your new files are there.
+
+Two more fonts to go. Create lato-bold.ttf in the new fonts folder from here.
+
+Lastly, create lato-light.ttf in your new fonts folder from here.
+
+View your file tree and make sure the files are there.
