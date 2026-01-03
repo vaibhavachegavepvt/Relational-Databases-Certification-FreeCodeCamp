@@ -224,6 +224,7 @@ Correct!
  
 Which keybind is used to stop a running process?
 
+
 Shift + C
 Alt + C
 Ctrl + C
